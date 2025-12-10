@@ -13,7 +13,7 @@ Para la construcción física se utilizó una placa alrededor del *ESP32* genér
 
 ![Vista Isométrica](isometric.jpeg "Vista Isométrica de Construcción Física")
 ![Vista Isométrica Alternativa](isometric2.jpeg "Vista Isométrica Alternativa de Construcción Física")
-![Visa Superior](Zview.jpeg "Vista Isométrica Alternativa de Construcción Física"")
+![Vista Superior](Zview.jpeg "Vista Isométrica Alternativa de Construcción Física")
 
 ## Dependencias
 El proyecto fue desarrollado utilizando *ESP Integrated Development Framework* con versión mínima 5.5.0, por lo que este requiere de varios de los componentes presentes en dicho ambiente, además requiere de su integración con *Cmake* para realizar la construcción del proyecto y la programación de la placa *ESP32*.
