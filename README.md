@@ -18,6 +18,7 @@ Para la construcción física se utilizó una placa alrededor del *ESP32* genér
 ## Dependencias
 El proyecto fue desarrollado utilizando *ESP Integrated Development Framework* con versión mínima 5.5.0, por lo que este requiere de varios de los componentes presentes en dicho ambiente, además requiere de su integración con *Cmake* para realizar la construcción del proyecto y la programación de la placa *ESP32*.
 
-Como corredor MQTT se utilizó el servicio de alojamiento de *thingsboard.cloud*, por lo que se requiere registrar una cuenta y añadir una serie de dispositivos para iniciar la comunicación.
+Como corredor *MQTT* se utilizó el servicio de alojamiento de *thingsboard.cloud*, por lo que se requiere registrar una cuenta y añadir una serie de dispositivos para iniciar la comunicación.
 
 ## Funcionamiento y Ejecución
+Un vez programado el *ESP32*, este se encarga de establecer la conexión con el corredor *MQTT*, la arbitración se realiza por medio de solicitudes *Remote Procedure Call*, que con una serie de manejadores en el *ESP32*, permiten las ejecución de las rutinas correspondientes al modo manual y automático del sistema, este último permitiendo establecer umbrales para la indicación de valores de humedad con los LEDs y temperatura en el zumbador.
