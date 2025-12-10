@@ -48,6 +48,8 @@ static bool mqtt_connected = false;
 
 // Modo de control automático o manual
 static bool automatic_mode = true;
+static float last_temperature = 0.0;
+static float last_humidity = 0.0;
 
 // Manejo de eventos MQTT
 static void mqtt_event_handler(void *handler_args, esp_event_base_t base,
@@ -94,6 +96,17 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base,
           if (strcmp(mode->valuestring, "automatic") == 0) {
             automatic_mode = true;
             ESP_LOGI(TAG, "Mode set to: AUTOMATIC");
+            led_reset_manual_override(1);
+            led_reset_manual_override(2);
+            led_reset_manual_override(3);
+            if (last_humidity > 0) {
+              ESP_LOGI(TAG, "Updating LEDs with last humidity: %.1f%%", last_humidity);
+              leds_update_by_humidity(last_humidity);
+            }
+            if (last_temperature > 0) {
+              ESP_LOGI(TAG, "Updating buzzer with last temperature: %.1f°C", last_temperature);
+              buzzer_update_by_temperature(last_temperature);
+            }
           } else if (strcmp(mode->valuestring, "manual") == 0) {
             automatic_mode = false;
             ESP_LOGI(TAG, "Mode set to: MANUAL");
@@ -277,6 +290,8 @@ static void main_task(void *pvParameters) {
       if (dht_read_data(&humidity, &temperature) == 0) {
         ESP_LOGI(TAG, "Temperature: %.1f°C, Humidity: %.1f%%", temperature,
                  humidity);
+        last_temperature = temperature;
+        last_humidity = humidity;
         send_telemetry(temperature, humidity);
         break;
       } else {

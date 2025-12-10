@@ -1,0 +1,2 @@
+source /home/oscar/esp/proyecto_3_embebidos/build/bootloader/gdbinit/symbols
+source /home/oscar/esp/proyecto_3_embebidos/build/bootloader/gdbinit/connect

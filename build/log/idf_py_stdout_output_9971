@@ -1,0 +1,294 @@
+Command: /home/oscar/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/oscar/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 -m '/home/oscar/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/oscar/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 27 2025 18:56:59[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f624h (128548) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0002f64c vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0002f674 vaddr=3ffb0000 size=009a4h (  2468) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=a3d08h (670984) map[0m
+[0;32mI (372) esp_image: segment 4: paddr=000d3d30 vaddr=3ffb09a4 size=0361ch ( 13852) load[0m
+[0;32mI (378) esp_image: segment 5: paddr=000d7354 vaddr=40080000 size=18174h ( 98676) load[0m
+[0;32mI (428) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (428) boot: Disabling RNG early entropy source...[0m
+[0;32mI (439) cpu_start: Multicore app[0m
+[0;32mI (447) cpu_start: Pro cpu start user code[0m
+[0;32mI (447) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (447) app_init: Application information:[0m
+[0;32mI (447) app_init: Project name:     proyecto_3_embebidos[0m
+[0;32mI (452) app_init: App version:      1[0m
+[0;32mI (456) app_init: Compile time:     Dec  7 2025 11:49:02[0m
+[0;32mI (461) app_init: ELF file SHA256:  2e6ad9a0a...[0m
+[0;32mI (465) app_init: ESP-IDF:          v5.5[0m
+[0;32mI (469) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (472) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (476) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (480) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (487) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB86F0 len 00027910 (158 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (502) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 40098174 len 00007E8C (31 KiB): IRAM[0m
+[0;32mI (515) spi_flash: detected chip: generic[0m
+[0;32mI (517) spi_flash: flash io: dio[0m
+[0;33mW (520) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (533) main_task: Started on CPU0[0m
+[0;32mI (543) main_task: Calling app_main()[0m
+[0;32mI (543) DHT11_TB: Starting DHT11 ThingsBoard Application[0m
+[0;32mI (573) wifi:wifi driver task: 3ffc0744, prio:23, stack:6656, core=0[0m
+[0;32mI (583) wifi:wifi firmware version: f3dbad7[0m
+[0;32mI (583) wifi:wifi certification version: v7.0[0m
+[0;32mI (583) wifi:config NVS flash: enabled[0m
+[0;32mI (583) wifi:config nano formatting: disabled[0m
+[0;32mI (593) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (593) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (593) wifi:Init management short buffer num: 32[0m
+[0;32mI (603) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (603) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (613) wifi:Init static rx buffer num: 10[0m
+[0;32mI (613) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (623) wifi_init: rx ba win: 6[0m
+[0;32mI (623) wifi_init: accept mbox: 6[0m
+[0;32mI (623) wifi_init: tcpip mbox: 32[0m
+[0;32mI (623) wifi_init: udp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp tx win: 5760[0m
+[0;32mI (633) wifi_init: tcp rx win: 5760[0m
+[0;32mI (643) wifi_init: tcp mss: 1440[0m
+[0;32mI (643) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (643) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (653) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (663) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (743) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (783) wifi:mode : sta (64:b7:08:ca:72:a0)[0m
+[0;32mI (783) wifi:enable tsf[0m
+[0;32mI (783) DHT11_TB: WiFi initialization complete[0m
+[1;31mE (793) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (793) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (793) mqtt_client: Error transport connect[0m
+[1;31mE (803) DHT11_TB: MQTT Error[0m
+[0;32mI (803) DHT11_TB: MQTT Disconnected[0m
+[0;32mI (803) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (813) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (823) BUZZER: Buzzer initialized on GPIO33 at 2000Hz[0m
+[0;32mI (823) BUZZER: Temperature threshold: 30.0°C[0m
+[0;32mI (823) DHT11_TB: Sensor task started, waiting for MQTT connection...[0m
+[0;32mI (833) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (843) main_task: Returned from app_main()[0m
+[0;32mI (843) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (863) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (993) wifi:connected with Familia GonzalezCa, aid = 1, channel 11, BW20, bssid = 58:76:ac:f5:38:93[0m
+[0;32mI (993) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (1003) wifi:pm start, type: 1[0m
+
+[0;32mI (1003) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1003) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1063) wifi:<ba-add>idx:0 (ifx:0, 58:76:ac:f5:38:93), tid:0, ssn:2, winSize:64[0m
+[0;32mI (1843) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (2473) esp_netif_handlers: sta ip: 192.168.40.156, mask: 255.255.255.0, gw: 192.168.40.1[0m
+[0;32mI (2473) DHT11_TB: Got IP: 192.168.40.156[0m
+[0;32mI (2843) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (3843) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (4843) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (5843) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (6843) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (7843) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (8843) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (9843) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (10843) DHT11_TB: Waiting for MQTT connection...[0m
+[0;32mI (11503) DHT11_TB: MQTT Connected to ThingsBoard[0m
+[0;32mI (11843) DHT11_TB: MQTT connected! Starting sensor readings...[0m
+[1;31mE (11863) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (11863) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (13863) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (13863) DHT11_TB: Read attempt 2/3 failed[0m
+[1;31mE (15883) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (15883) DHT11_TB: Read attempt 3/3 failed[0m
+[0;32mI (15883) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (15883) DHT11_TB: Failed to read DHT11 sensor after 3 attempts[0m
+[1;31mE (35913) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (35913) DHT11_TB: Read attempt 1/3 failed[0m
+[0;32mI (37933) DHT11_UTILS: Raw data: 59 3 24 4 90[0m
+[0;32mI (37933) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (37943) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (37943) DHT11_TB: Running in AUTOMATIC mode[0m
+[0;32mI (37943) LED_CONTROL: LED 1 turned ON (auto)[0m
+[1;31mE (57973) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (57973) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (59993) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (59993) DHT11_TB: Read attempt 2/3 failed[0m
+[1;31mE (62013) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (62013) DHT11_TB: Read attempt 3/3 failed[0m
+[0;32mI (62013) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (62013) DHT11_TB: Failed to read DHT11 sensor after 3 attempts[0m
+[1;31mE (82043) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (82043) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (84063) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (84063) DHT11_TB: Read attempt 2/3 failed[0m
+[1;31mE (86083) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (86083) DHT11_TB: Read attempt 3/3 failed[0m
+[0;32mI (86083) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (86083) DHT11_TB: Failed to read DHT11 sensor after 3 attempts[0m
+[1;31mE (106113) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (106113) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (108133) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (108133) DHT11_TB: Read attempt 2/3 failed[0m
+[0;32mI (110153) DHT11_UTILS: Raw data: 59 2 24 4 89[0m
+[0;32mI (110153) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (110163) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (110163) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (130183) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (130183) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (132203) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (132203) DHT11_TB: Read attempt 2/3 failed[0m
+[1;31mE (134223) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (134223) DHT11_TB: Read attempt 3/3 failed[0m
+[0;32mI (134223) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (134223) DHT11_TB: Failed to read DHT11 sensor after 3 attempts[0m
+[0;32mI (138373) DHT11_TB: RPC topic: v1/devices/me/rpc/request/499, payload: {"method":"setLED","params":{"led":3,"state":true}}[0m
+[0;32mI (138373) DHT11_TB: RPC request - LED3 -> ON[0m
+[0;32mI (138373) LED_CONTROL: LED 3 turned ON (manual)[0m
+[0;32mI (139403) DHT11_TB: RPC topic: v1/devices/me/rpc/request/500, payload: {"method":"setLED","params":{"led":3,"state":false}}[0m
+[0;32mI (139403) DHT11_TB: RPC request - LED3 -> OFF[0m
+[0;32mI (139403) LED_CONTROL: LED 3 turned OFF (manual)[0m
+[0;32mI (140903) DHT11_TB: RPC topic: v1/devices/me/rpc/request/501, payload: {"method":"setLED","params":{"led":1,"state":true}}[0m
+[0;32mI (140903) DHT11_TB: RPC request - LED1 -> ON[0m
+[0;32mI (140903) LED_CONTROL: LED 1 turned ON (manual)[0m
+[0;32mI (141943) DHT11_TB: RPC topic: v1/devices/me/rpc/request/502, payload: {"method":"setLED","params":{"led":1,"state":false}}[0m
+[0;32mI (141943) DHT11_TB: RPC request - LED1 -> OFF[0m
+[0;32mI (141953) LED_CONTROL: LED 1 turned OFF (manual)[0m
+[1;31mE (154253) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (154253) DHT11_TB: Read attempt 1/3 failed[0m
+[0;32mI (156273) DHT11_UTILS: Raw data: 59 1 24 5 89[0m
+[0;32mI (156273) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (156283) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (156283) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (176313) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (176313) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (178333) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (178333) DHT11_TB: Read attempt 2/3 failed[0m
+[0;32mI (180353) DHT11_UTILS: Raw data: 59 1 24 5 89[0m
+[0;32mI (180353) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (180363) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (180363) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (200383) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (200383) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (202403) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (202403) DHT11_TB: Read attempt 2/3 failed[0m
+[1;31mE (204423) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (204423) DHT11_TB: Read attempt 3/3 failed[0m
+[0;32mI (204423) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (204423) DHT11_TB: Failed to read DHT11 sensor after 3 attempts[0m
+[1;31mE (224453) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (224453) DHT11_TB: Read attempt 1/3 failed[0m
+[0;32mI (226473) DHT11_UTILS: Raw data: 59 2 24 5 90[0m
+[0;32mI (226473) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (226483) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (226483) DHT11_TB: Running in AUTOMATIC mode[0m
+[0;32mI (243703) DHT11_TB: RPC topic: v1/devices/me/rpc/request/503, payload: {"method":"setMode","params":{"mode":"manual"}}[0m
+[0;32mI (243703) DHT11_TB: Mode set to: MANUAL[0m
+[0;32mI (244783) DHT11_TB: RPC topic: v1/devices/me/rpc/request/504, payload: {"method":"setMode","params":{"mode":"automatic"}}[0m
+[0;32mI (244793) DHT11_TB: Mode set to: AUTOMATIC[0m
+[1;31mE (246503) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (246503) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (248523) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (248523) DHT11_TB: Read attempt 2/3 failed[0m
+[1;31mE (250543) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (250543) DHT11_TB: Read attempt 3/3 failed[0m
+[0;32mI (250543) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (250543) DHT11_TB: Failed to read DHT11 sensor after 3 attempts[0m
+[1;31mE (270573) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (270573) DHT11_TB: Read attempt 1/3 failed[0m
+[0;32mI (272593) DHT11_UTILS: Raw data: 59 1 24 4 88[0m
+[0;32mI (272593) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (272603) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (272603) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (292623) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (292623) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (294643) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (294643) DHT11_TB: Read attempt 2/3 failed[0m
+[0;32mI (296663) DHT11_UTILS: Raw data: 59 2 24 4 89[0m
+[0;32mI (296663) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (296673) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (296673) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (316703) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (316703) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (318723) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (318723) DHT11_TB: Read attempt 2/3 failed[0m
+[1;31mE (320743) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (320743) DHT11_TB: Read attempt 3/3 failed[0m
+[0;32mI (320743) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (320743) DHT11_TB: Failed to read DHT11 sensor after 3 attempts[0m
+[1;31mE (340773) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (340773) DHT11_TB: Read attempt 1/3 failed[0m
+[0;32mI (342793) DHT11_UTILS: Raw data: 59 2 24 5 90[0m
+[0;32mI (342793) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (342803) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (342803) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (362823) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (362823) DHT11_TB: Read attempt 1/3 failed[0m
+[0;32mI (364843) DHT11_UTILS: Raw data: 59 1 24 4 88[0m
+[0;32mI (364843) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (364853) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (364853) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (384873) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (384873) DHT11_TB: Read attempt 1/3 failed[0m
+[0;32mI (386893) DHT11_UTILS: Raw data: 59 1 24 4 88[0m
+[0;32mI (386893) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (386903) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (386903) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (406923) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (406923) DHT11_TB: Read attempt 1/3 failed[0m
+[0;32mI (408943) DHT11_UTILS: Raw data: 59 0 24 4 87[0m
+[0;32mI (408943) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (408953) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (408953) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (428973) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (428973) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (430993) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (430993) DHT11_TB: Read attempt 2/3 failed[0m
+[0;32mI (433013) DHT11_UTILS: Raw data: 59 1 24 4 88[0m
+[0;32mI (433013) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (433023) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (433023) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (453043) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (453043) DHT11_TB: Read attempt 1/3 failed[0m
+[0;32mI (455063) DHT11_UTILS: Raw data: 59 2 24 4 89[0m
+[0;32mI (455063) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (455073) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (455073) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (475093) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (475093) DHT11_TB: Read attempt 1/3 failed[0m
+[1;31mE (477113) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (477113) DHT11_TB: Read attempt 2/3 failed[0m
+[1;31mE (479133) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (479133) DHT11_TB: Read attempt 3/3 failed[0m
+[0;32mI (479133) DHT11_TB: Running in AUTOMATIC mode[0m
+[1;31mE (479133) DHT11_TB: Failed to read DHT11 sensor after 3 attempts[0m
+[1;31mE (499163) DHT11_UTILS: DHT11 read failed[0m
+[0;33mW (499163) DHT11_TB: Read attempt 1/3 failed[0m
+[0;32mI (501183) DHT11_UTILS: Raw data: 59 2 24 4 89[0m
+[0;32mI (501183) DHT11_TB: Temperature: 24.0°C, Humidity: 59.0%[0m
+[0;32mI (501193) DHT11_TB: Sent: {"temperature":24.0,"humidity":59.0,"buzzer":false,"buzzer_mode":"auto","temp_threshold":30.0,"mode":"automatic"}[0m
+[0;32mI (501193) DHT11_TB: Running in AUTOMATIC mode[0m
